@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CMS API Sample: Video Schema Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-code-pro" type="text/css"/>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h2 id="accountInput">Schema Generator</h2>
+
+<p class="text-warning"><span style="color:#990000;">All fields are <strong>required</strong></span>. Default values are included from the Brightcove Learning Services demo account to allow you to test the tool — you must replace all of these to get a schema for your own video.</p>
+
+<div id="inputFields" class="input-fields">
+<fieldset class="bcls-fieldset"><legend>Account Information</legend>
+
+<div id="accountInfo">
+<table class="bcls-table">
+	<tbody class="bcls-table__body">
+		<tr>
+			<td>Video Cloud Account ID:</td>
+			<td><input id="accountID" type="text" size="60" placeholder="1752604059001" /></td>
+		</tr>
+		<tr>
+			<td>Client id:</td>
+			<td><input id="clientID" type="text" size="60" /></td>
+		</tr>
+		<tr>
+			<td>Client secret:</td>
+			<td><input id="clientSecret" type="text" size="60" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</fieldset>
+</div>
+<fieldset class="bcls-fieldset"><legend>Player Information</legend>
+
+<div id="playerInfo">
+<p class="BCL-aside">Note: use a single video player</p>
+
+<table class="bcls-table">
+	<tbody class="bcls-table__body">
+		<tr>
+			<td>Video ID</td>
+			<td><input id="videoID" type="text" size="60" placeholder="4454620113001" /></td>
+		</tr>
+		<tr>
+			<td>Player ID (from Publishing Module or publishing code):</td>
+			<td><input id="playerID" size="60" placeholder="28e29e6d-bed3-4db9-8d70-8d55b8aa3091" /></td>
+		</tr>
+		<tr>
+			<td>Player width:</td>
+			<td><input id="playerWidth" type="text" size="60" placeholder="480" /></td>
+		</tr>
+		<tr>
+			<td>Player height:</td>
+			<td><input id="playerHeight" type="text" size="60" placeholder="270" /></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p><button id="generateMicrodata" class="bcls-button">Generate Microdata Schema</button><button id="generateJSON_ld" class="bcls-button">Generate JSON-LD Schema</button></p>
+</fieldset>
+<div id="publishingCodeWrapper">
+<fieldset class="bcls-fieldset"><legend>Publishing Code</legend><textarea id="publishingCode" class="bcls-code"></textarea></fieldset>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
